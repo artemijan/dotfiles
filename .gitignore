@@ -2,3 +2,4 @@
 !.gitignore
 !zsh/*
 !fish/*
+!README.md
