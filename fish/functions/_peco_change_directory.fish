@@ -1,19 +1,25 @@
 function _peco_change_directory
   if [ (count $argv) ]
-    peco --query "$argv "|perl -pe 's/([ ()])/\\\\$1/g'| string split " " -m1 -f2 | awk -v PWD="$PWD" '{print PWD"/"$1}' | string replace -a ' ' '\ '|read foo
+    peco --query "$argv " | exa_path | read foo
   else
-    peco |perl -pe 's/([ ()])/\\\\$1/g'| string split " " -m1 -f2 | awk -v PWD="$PWD" '{print PWD"/"$1}' | string replace -a ' ' '\ '|read foo
+    peco |exa_path | read foo
   end
-  if [ $foo ]
-    if test -d $foo 
-      builtin cd $foo
+ 
+  if [ "$foo" ]
+    if test -d "$foo"
+      builtin cd "$foo"
       commandline -r ''
       commandline -f repaint
       peco_change_directory
-    else if test -e $foo
-      micro $foo
+    else if test -e "$foo"
+      if test -n "$TERMINAL_VSCODE"
+        code -r "$foo"
+     else
+        micro "$foo"
+     end
     end
   else
-    commandline ''
+    commandline -r ''
+    commandline -f repaint
   end
 end

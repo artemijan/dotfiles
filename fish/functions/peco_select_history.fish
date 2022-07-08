@@ -10,6 +10,7 @@ function peco_select_history
   if [ $foo ]
     commandline $foo
   else
-    commandline ''
+    commandline -r ''
+    commandline -f repaint
   end
 end
