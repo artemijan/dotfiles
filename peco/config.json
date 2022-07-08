@@ -1,0 +1,13 @@
+{
+	"Keymap": {
+		"C-s": "peco.ToggleSelection",
+		"M-s": "peco.SelectNone",
+		"C-a": "peco.SelectAll",
+		"C-v": "vscode",
+		"C-p": "pycharm"
+	},
+	"Exec": {
+		"vscode": "echo $result | exa_path | read p && code -r $p",
+		"pycharm": "echo $result | exa_path| read loc && pycharm $loc"
+	}
+}

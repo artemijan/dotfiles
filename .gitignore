@@ -1,5 +1,1 @@
-*
-!.gitignore
-!zsh/*
-!fish/*
-!README.md
+micro/
