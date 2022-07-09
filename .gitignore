@@ -7,3 +7,4 @@ fish/tide/*
 fish/functions/tide/*
 fish/bass*
 binenv/
+configstore/
