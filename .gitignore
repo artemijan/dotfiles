@@ -1,2 +1,8 @@
 micro/
+gh/
 fish/fish_variables
+fish/__bass*
+fish/functions/_tide*
+fish/tide/*
+fish/functions/tide/*
+fish/bass*
