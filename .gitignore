@@ -10,3 +10,4 @@ binenv/
 configstore/
 omf/
 fish/conf.d/
+fish/fish_plugins
