@@ -8,3 +8,4 @@ fish/functions/tide/*
 fish/bass*
 binenv/
 configstore/
+omf/
