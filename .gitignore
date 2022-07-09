@@ -1,7 +1,7 @@
 micro/
 gh/
 fish/fish_variables
-fish/__bass.fish
+fish/__bass*
 fish/functions/_tide*
 fish/tide/*
 fish/functions/tide/*
@@ -12,3 +12,7 @@ omf/
 fish/conf.d/
 fish/fish_plugins
 fish/completions
+fish/functions/fish_mode_prompt.fish
+fish/functions/fish_prompt.fish
+fish/functions/fisher.fish
+fish/functions/tide.fish
