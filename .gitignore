@@ -9,3 +9,4 @@ fish/bass*
 binenv/
 configstore/
 omf/
+fish/conf.d/
