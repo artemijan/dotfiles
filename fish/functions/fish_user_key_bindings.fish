@@ -3,7 +3,7 @@ function fish_user_key_bindings
   bind \ch peco_select_history # Bind for peco select history to Ctrl+R
   bind \cf peco_change_directory # Bind for peco change directory to Ctrl+F
   bind \eF peco_change_directory_list_all # Bind for peco change directory to Alt+F
-
+  bind \ct tmux
   # vim-like
   bind \cl forward-char
 
