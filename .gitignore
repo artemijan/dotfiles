@@ -1,5 +1,9 @@
-*
+/*
 
 !fish/functions/*
 !fish/config.fish
 !alacritty/alacritty.yml
+!peco/config.json
+!.gitignore
+!README.md
+!zsh/*
